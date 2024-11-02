@@ -167,6 +167,28 @@ func (s *sqlStrConcat) checkQuery(call *ast.CallExpr, ctx *gosec.Context) (*issu
 				return ctx.NewIssue(be, s.ID(), s.What, s.Severity, s.Confidence), nil
 			}
 		}
+		if ident, ok := operands[0].(*ast.Ident); ok && ident.Obj != nil {
+			var match bool
+			for _, str := range gosec.GetIdentStringValuesRecursive(ident) {
+				if s.MatchPatterns(str) {
+					match = true
+					break
+				}
+			}
+			if !match {
+				return nil, nil
+			}
+			for _, op := range operands[1:] {
+				if _, ok := op.(*ast.BasicLit); ok {
+					continue
+				}
+				if op, ok := op.(*ast.Ident); ok && s.checkObject(op, ctx) {
+					continue
+				}
+				return ctx.NewIssue(be, s.ID(), s.What, s.Severity, s.Confidence), nil
+			}
+
+		}
 	}
 
 	// Handle the case where an injection occurs as an infixed string concatenation, ie "SELECT * FROM foo WHERE name = '" + os.Args[0] + "' AND 1=1"
