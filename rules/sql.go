@@ -52,6 +52,9 @@ var sqlCallIdents = map[string]map[string]int{
 		"Prepare":         0,
 		"PrepareContext":  1,
 	},
+	"github.com/astaxie/beego/orm.Ormer": {
+		"Raw": 0,
+	},
 }
 
 // findQueryArg locates the argument taking raw SQL
@@ -280,6 +283,13 @@ func (s *sqlStrFormat) checkQuery(call *ast.CallExpr, ctx *gosec.Context) (*issu
 		}
 	}
 
+	if expr, ok := query.(*ast.CallExpr); ok {
+		issue := s.checkFormatting(expr, ctx)
+		if issue != nil {
+			return issue, err
+		}
+	}
+
 	return nil, nil
 }
 
@@ -317,7 +327,13 @@ func (s *sqlStrFormat) checkFormatting(n ast.Node, ctx *gosec.Context) *issue.Is
 			}
 		} else if arg, e := gosec.GetString(node.Args[argIndex]); e == nil {
 			formatter = arg
+		} else if ident, ok := node.Args[argIndex].(*ast.Ident); ok && ident.Obj != nil {
+			strList := gosec.GetIdentStringValuesRecursive(ident)
+			if len(strList) > 0 {
+				formatter = strList[0]
+			}
 		}
+
 		if len(formatter) <= 0 {
 			return nil
 		}

@@ -19,6 +19,6 @@ func prepareVersionInfo() {
 		// Version = bi.Main.Version
 		// TODO use the debug information when it will provide more details
 		// It seems to panic with Go 1.13.
-		Version = "dev"
+		Version = "v2.21.4-beta"
 	}
 }

@@ -336,6 +336,7 @@ func (gosec *Analyzer) load(pkgPath string, conf *packages.Config) ([]*packages.
 	gosec.mu.Lock()
 	buildD.BuildTags = conf.BuildFlags
 	gosec.mu.Unlock()
+	conf.Env = append(os.Environ(), "GO111MODULE=on")
 	basePackage, err := buildD.ImportDir(pkgPath, build.ImportComment)
 	if err != nil {
 		return []*packages.Package{}, fmt.Errorf("importing dir %q: %w", pkgPath, err)
