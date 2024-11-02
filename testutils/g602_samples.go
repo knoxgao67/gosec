@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG602 - Slice access out of bounds
 var SampleCodeG602 = []CodeSample{

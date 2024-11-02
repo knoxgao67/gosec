@@ -10,11 +10,11 @@ import (
 	. "github.com/onsi/gomega"
 	"gopkg.in/yaml.v3"
 
-	"github.com/securego/gosec/v2"
-	"github.com/securego/gosec/v2/cwe"
-	"github.com/securego/gosec/v2/issue"
-	"github.com/securego/gosec/v2/report/junit"
-	"github.com/securego/gosec/v2/report/sonar"
+	"github.com/knoxgao67/gosec/v2"
+	"github.com/knoxgao67/gosec/v2/cwe"
+	"github.com/knoxgao67/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/report/junit"
+	"github.com/knoxgao67/gosec/v2/report/sonar"
 )
 
 func createIssueWithFileWhat(file, what string) *issue.Issue {

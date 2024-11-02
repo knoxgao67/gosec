@@ -21,12 +21,12 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/knoxgao67/gosec/v2"
+	"github.com/knoxgao67/gosec/v2/analyzers"
+	"github.com/knoxgao67/gosec/v2/rules"
+	"github.com/knoxgao67/gosec/v2/testutils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/securego/gosec/v2"
-	"github.com/securego/gosec/v2/analyzers"
-	"github.com/securego/gosec/v2/rules"
-	"github.com/securego/gosec/v2/testutils"
 	"golang.org/x/tools/go/packages"
 )
 

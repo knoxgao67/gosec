@@ -1,7 +1,7 @@
 package gosec
 
 import (
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 // ReportInfo this is report information

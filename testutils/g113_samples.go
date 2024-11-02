@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG113 - Usage of Rat.SetString in math/big with an overflow
 var SampleCodeG113 = []CodeSample{

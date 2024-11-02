@@ -1,4 +1,4 @@
-module github.com/securego/gosec/v2
+module github.com/knoxgao67/gosec/v2
 
 require (
 	github.com/ccojocar/zxcvbn-go v1.0.2

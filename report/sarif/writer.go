@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/securego/gosec/v2"
+	"github.com/knoxgao67/gosec/v2"
 )
 
 // WriteReport write a report in SARIF format to the output writer

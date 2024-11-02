@@ -8,9 +8,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/securego/gosec/v2"
-	"github.com/securego/gosec/v2/cwe"
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2"
+	"github.com/knoxgao67/gosec/v2/cwe"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 // GenerateReport converts a gosec report into a SARIF report

@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 var (
 	// SampleCodeG401 - Use of weak crypto hash MD5

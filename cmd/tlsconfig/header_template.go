@@ -8,7 +8,7 @@ package {{.}}
 import (
 	"go/ast"
 
-	"github.com/securego/gosec/v2"
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 `))

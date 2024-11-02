@@ -9,7 +9,7 @@ import (
 	"github.com/google/generative-ai-go/genai"
 	"google.golang.org/api/option"
 
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 const (

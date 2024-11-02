@@ -35,8 +35,8 @@ import (
 	"golang.org/x/tools/go/analysis/passes/buildssa"
 	"golang.org/x/tools/go/packages"
 
-	"github.com/securego/gosec/v2/analyzers"
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/analyzers"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 // LoadMode controls the amount of details to return when loading the packages

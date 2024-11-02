@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 var defaultIssue = issue.Issue{

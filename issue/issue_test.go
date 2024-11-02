@@ -6,10 +6,10 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/securego/gosec/v2"
-	"github.com/securego/gosec/v2/issue"
-	"github.com/securego/gosec/v2/rules"
-	"github.com/securego/gosec/v2/testutils"
+	"github.com/knoxgao67/gosec/v2"
+	"github.com/knoxgao67/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/rules"
+	"github.com/knoxgao67/gosec/v2/testutils"
 )
 
 var _ = Describe("Issue", func() {

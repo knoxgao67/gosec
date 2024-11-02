@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG407 - Use of hardcoded nonce/IV
 var SampleCodeG407 = []CodeSample{

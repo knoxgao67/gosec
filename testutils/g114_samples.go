@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG114 - Use of net/http serve functions that have no support for setting timeouts
 var SampleCodeG114 = []CodeSample{

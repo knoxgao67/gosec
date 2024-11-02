@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG202 - SQL query string building via string concatenation
 var SampleCodeG202 = []CodeSample{

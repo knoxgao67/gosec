@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/tools/go/packages"
 
-	"github.com/securego/gosec/v2"
+	"github.com/knoxgao67/gosec/v2"
 )
 
 type buildObj struct {

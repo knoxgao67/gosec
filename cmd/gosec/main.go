@@ -24,13 +24,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/securego/gosec/v2"
-	"github.com/securego/gosec/v2/analyzers"
-	"github.com/securego/gosec/v2/autofix"
-	"github.com/securego/gosec/v2/cmd/vflag"
-	"github.com/securego/gosec/v2/issue"
-	"github.com/securego/gosec/v2/report"
-	"github.com/securego/gosec/v2/rules"
+	"github.com/knoxgao67/gosec/v2"
+	"github.com/knoxgao67/gosec/v2/analyzers"
+	"github.com/knoxgao67/gosec/v2/autofix"
+	"github.com/knoxgao67/gosec/v2/cmd/vflag"
+	"github.com/knoxgao67/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/report"
+	"github.com/knoxgao67/gosec/v2/rules"
 )
 
 const (

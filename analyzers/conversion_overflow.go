@@ -27,7 +27,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/buildssa"
 	"golang.org/x/tools/go/ssa"
 
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 type integer struct {

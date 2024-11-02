@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG302 - file create / chmod permissions check
 var SampleCodeG302 = []CodeSample{

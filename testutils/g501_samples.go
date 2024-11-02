@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/securego/gosec/v2"
+import "github.com/knoxgao67/gosec/v2"
 
 // SampleCodeG501 - Blocklisted import MD5
 var SampleCodeG501 = []CodeSample{

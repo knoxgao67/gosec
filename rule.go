@@ -16,7 +16,7 @@ import (
 	"go/ast"
 	"reflect"
 
-	"github.com/securego/gosec/v2/issue"
+	"github.com/knoxgao67/gosec/v2/issue"
 )
 
 // The Rule interface used by all rules supported by gosec.
